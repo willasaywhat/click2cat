@@ -1,0 +1,32 @@
+{
+"name":"Click2Cat",
+"description":"A chrome extension for the Veracode platform to add functionality for click2cat pilot.",
+"version":"1",
+"manifest_version":2,
+"content_scripts": [
+    {
+	  "run_at": "document_end",
+      "matches": ["http://analysiscenter.veracode.com/*","https://analysiscenter.veracode.com/*"],
+      "js": ["js/click2cat.js"]
+    }
+  ],
+  "permissions": [
+		"storage"
+	],
+	"icons": { 
+		"16": "img/icon16.png",
+		"48": "img/icon48.png",
+		"128": "img/icon128.png" 
+	},
+	"browser_action": {
+		"default_icon": {                    
+			"19": "img/icon48.png",          
+			"38": "img/icon48.png"          
+		},
+		"default_popup": "popup.html"
+	},
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+	"web_accessible_resources": [
+		"img/icon128.png"
+	]
+}
