@@ -10,3 +10,9 @@ Really. That's all it does.
 * Go to Settings > Extensions in Google Chrome and enable Developer Mode
 * Click "Load unpackaged extension..." and select the click2cat folder
 * Go to a report page and enjoy the new feature!
+
+## How it looks
+
+![pretty button!](img/click-2-cat-report-page.PNG)
+
+![after clicking](img/click-2-cat-report-page-after-clicking.PNG)
